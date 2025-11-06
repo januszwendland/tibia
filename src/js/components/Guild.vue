@@ -31,6 +31,9 @@
                                 v-bind:class="{ 'selected': vocation === 'ek' }"
                                 v-on:click="setVocation('ek')">Knight</span>
                             <span class="filters-pill"
+                                v-bind:class="{ 'selected': vocation === 'em' }"
+                                v-on:click="setVocation('em')">Monk</span>
+                            <span class="filters-pill"
                                 v-bind:class="{ 'selected': vocation === 'rp' }"
                                 v-on:click="setVocation('rp')">Paladin</span>
                             <span class="filters-pill"
@@ -151,6 +154,10 @@
                 }
 
                 if (this.vocation === 'ek' && vocation.indexOf("Knight") != -1) {
+                    return true;
+                }
+
+                if (this.vocation === 'em' && vocation.indexOf("Monk") != -1) {
                     return true;
                 }
 
