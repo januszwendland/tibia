@@ -66,7 +66,7 @@
 </template>
 
 <style scoped lang="scss">
-@import '../../scss/variables.scss';
+@use '../../scss/variables' as *;
 
 .timer {
     border: 1px solid $gray;

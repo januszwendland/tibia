@@ -83,7 +83,7 @@
 </template>
 
 <style lang="scss">
-@import '../../scss/variables';
+@use '../../scss/variables' as *;
     
 .ellipsis {
     text-overflow: ellipsis;

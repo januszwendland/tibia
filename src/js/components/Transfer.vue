@@ -118,7 +118,7 @@
 </template>
 
 <style scoped lang="scss">
-@import '../../scss/variables.scss';
+@use '../../scss/variables' as *;
 
 .server-info-icon {
     vertical-align: middle;
